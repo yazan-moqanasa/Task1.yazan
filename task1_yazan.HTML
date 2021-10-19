@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head><title>task1 web</title>
+
+<style>
+		
+	.col {
+ 	 	float: left;
+  		width: 15%;
+  		padding: 20px;
+      margin: 60px;
+	}
+
+	.row {
+padding:15px;
+    clear: both;
+  
+    	}
+
+h1
+{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(204, 153, 57);
+  text-align: center;
+    margin: 30px;
+    
+}
+
+input{
+  padding: 20px;
+  float: right;
+font-size: 25px;
+font-family:cursive;
+} 
+
+</style>
+	
+<script>
+
+ var randoomph=0; 
+
+  
+function photoVisibility() {
+
+  randoomph+=1;
+
+    if (randoomph === 1){
+      document.getElementById('picter1').style.visibility="visible";
+    }
+
+    if (randoomph === 2){
+  document.getElementById('picter2').style.visibility="visible";
+
+    }
+
+    if (randoomph === 3){
+      document.getElementById('picter3').style.visibility="visible";
+    }
+
+    if (randoomph === 4){
+  document.getElementById('picter4').style.visibility="visible";
+
+    }
+    if (randoomph === 5){
+      document.getElementById('picter5').style.visibility="visible";
+    }
+
+    if (randoomph === 6){
+  document.getElementById('picter6').style.visibility="visible";
+
+    }
+}
+</script>
+
+</head>
+
+
+<body id ="h1" bgcolor="lightblue">
+
+	<h1>HELLO TEAM AN-NAJAH CAP</h1>
+
+
+	<div class="row">
+
+    <div class="col">
+      <img id="picter1" src="lab.jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+    </div>
+
+    <div class="col">
+      <img id="picter2" src="codweb.jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+    </div>
+
+    <div class="col">
+      <img id="picter3" src="cpu.jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <img id="picter4" src="computer.jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+    </div>
+
+    <div class="col">
+    <img id="picter5" src="OIP (2).jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+  </div>
+
+  <div class="col">
+    <img id="picter6" src="cod.jpg" class="position" style="visibility:hidden" width="256" height="256"/>
+  </div>
+
+	</div>
+
+
+
+
+  <center >
+    <input type="button" value="GO TO THE PICTIORS" onclick="photoVisibility();"  style="width:300px ;height:250px; text-align: center;"/>
+</center>
+
+
+
+</body>
+</html>
+
+
+
+
+
